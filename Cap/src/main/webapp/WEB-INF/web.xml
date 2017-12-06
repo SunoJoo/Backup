@@ -1,0 +1,24 @@
+
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" > 
+
+<web-app>
+<servlet>
+	<servlet-name>front</servlet-name>
+	<servlet-class>controller.AppController</servlet-class>
+</servlet>	
+<servlet>
+	<servlet-name>data</servlet-name>
+	<servlet-class>web.connect.Push</servlet-class>
+</servlet>	
+<servlet-mapping>
+	<servlet-name>front</servlet-name>	
+	<url-pattern>*.page</url-pattern>
+</servlet-mapping>	
+<servlet-mapping>
+	<servlet-name>data</servlet-name>
+	<url-pattern>*.view</url-pattern>
+</servlet-mapping>
+</web-app>
+
